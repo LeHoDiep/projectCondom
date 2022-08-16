@@ -1,0 +1,25 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title PiedTeam
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide-core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  body
+    //- h1 ahihi
+    //- img(src="./../img/bg-login.jpg", alt="", srcset="")
+    include ./layout/header.pug
+    include ./layout/evaluation.pug
+    include ./layout/product.pug
+    include ./layout/voucher.pug
+    include ./layout/founder.pug
+    include ./layout/rating.pug
+    include ./layout/benefits.pug
+    include ./layout/service.pug
+    include ./layout/footer.pug
+    noscript  PiedTeam
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    script(src='../bundle.js')
