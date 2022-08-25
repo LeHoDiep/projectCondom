@@ -1,0 +1,73 @@
+.huy
+  // SignIn Up
+  .login-bg
+    .container
+      .login
+        .form-box
+          #close.close-container
+            .leftright
+            .rightleft
+          .button-box
+            #btnLoginIn
+            button#in.toggle-btn(type='button') Sign In
+            button#up.toggle-btn(type='button') Sign Up
+          form#signIn.input-group
+            input.input-field(type='text' placeholder='User Id' required='')
+            input.input-field(type='password' placeholder='Enter Password' required='')
+            input.chech-box(type='checkbox')
+            span Remeber Password
+            button.submit-btn(type='submit') Sign In
+          form#signUp.input-group
+            input.input-field(type='text' placeholder='User Id' required='')
+            input.input-field(type='email' placeholder='Email Id' required='')
+            input.input-field(type='password' placeholder='Enter Password' required='')
+            input.chech-box(type='checkbox')
+            span I agree to the term &amp; conditions
+            button.submit-btn(type='submit') Sign Up
+  // menu
+  .nav-bg
+    .container
+      .nav
+        // logo
+        .nav-logo
+          .nav-logo_img
+            img(src='../img/logo.png' alt='')
+          .nav-logo_text
+            a(href='#')
+              | SIX
+              span STARs
+        // icon menu
+        input.menu-btn(type='checkbox')
+        .menu-btn_icon
+          span
+        // list
+        .menu-list
+          // search
+          .search-box
+            input.search-text(type='text' name='' placeholder='Type to search')
+            a.search-btn(href='#')
+              svg.bi.bi-search(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewbox='0 0 16 16')
+                path(d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z')
+          button.btn.btn1 Product
+          button.btn.btn2 Pricing
+          button#sign-in.btn.btn3 Sign In
+          button#sign-up.btn.btn4 Sign Up
+  // img chính
+  .cvr-bg
+    .container
+      .cover
+        .cover-text
+          h2
+            | SIX
+            span STARs
+          p Hứa không rách!
+          h1 Đeo Bao Hay Đeo Nhẫn
+          p Ưu điểm trong việc tránh thai ngoài ý muốn, dễ sử dụng và không cần phải dùng thuốc. Thêm vào đó, bao cao su là biện pháp duy nhất giúp giảm cả nguy cơ mang thai và các bệnh lây truyền qua đường tình dục.
+          .btn-buy_now
+            a(style='--clr:#3498db' href='#')
+              span BUY NOW
+              i
+        .cover-img
+          img(src='../img/coverDown.png' alt='')
+script(type="module" src="../js/header.js") 
+
