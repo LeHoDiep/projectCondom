@@ -1,0 +1,219 @@
+//Lato font
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+.product-part {
+    .container {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+    
+    .productLeft {
+        display: flex;
+        padding: 4.5rem 2rem;
+    }
+    
+    .productRight {
+        display: flex;
+        padding: 4.5rem 2rem;
+    }
+    
+    .img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .img__bcs {
+        width: 50rem;
+    }
+    
+    .img__otherBcs {
+        display: flex;
+        width: 70rem;
+    }
+    
+    .img__otherBcsLeft {
+        width: 70%;
+        height: 70%;
+    }
+    
+    .img__otherBcsRight {
+        width: 60%;
+        height: 75%;
+    }
+    
+    .img__gel {
+        display: flex;
+        width: 60%;
+    }
+    
+    .img__gelLeft {
+        width: 70%;
+        height: 70%;
+    }
+    
+    .img__gelRight {
+        width: 50%;
+        height: 65%;
+    }
+    
+    .img__other {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 70%;
+    }
+    
+    .img__other img{
+        width: 40%;
+        height: 40%;
+    }
+    
+    .nav-bcs__content {
+        padding: 1rem 5rem 5rem 5rem;
+        font-family: 'Roboto Slab', serif;
+        margin: 1rem 2rem 1rem 2rem;
+        border: 1rem double #333333;
+        color: darkslategrey;
+        background-color: #F8F8FF;
+        transition: 0.5s;
+    }
+    
+    .content__bcs{
+        position: relative;
+        border: 2px ;
+        width: 60%;
+    }
+    
+    .header_content {
+        border-radius: 8px;
+        text-align: center;
+        font-family: 'Bungee Shade', cursive;
+        background-color: #333333;
+        color: white;
+        padding: 1rem 1rem;
+        transition: 1s;
+    }
+
+    .content__bcs:hover {
+        .header_content{
+            background-image: radial-gradient(at center top, rgba(247,150,192,1), rgba(118,174,241,1));
+            color: #333333;
+            -webkit-transition:0.5s all ease;
+            transition: 1s;
+        }
+
+        .nav-bcs__content {
+            transform: scale(1.05, 1.05);
+            transition: 0.5s;
+        }
+    }
+    
+    .content__bcs ul {
+        padding-left: 5rem;
+    }
+    
+    .content__bcs p {
+        padding-top: 1rem;
+    }
+    
+    .btn-control__Buynow {
+        position: absolute;
+        z-index: 4;
+        // bottom: 15%;
+        left: 50%;
+    }
+    
+    .btn {
+        position: relative;
+        letter-spacing: 0.25em;
+        margin: 0 auto;
+        padding: 1rem 2.5rem;
+        background: transparent;
+        outline: none;
+        font-size: 28px;
+        color: #333333;
+        text-decoration: none;
+    }
+    
+    .btn::before {
+        background-color: #c5dbf2;
+        top: -1rem;
+        left: 0rem;
+    }
+    
+    .btn::after, .btn::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        transform: skewX(30deg);
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        z-index: -4;
+    }
+    
+    .btn::after {
+        background-color: #fd90c6;
+        top: 1rem;
+        left: 10rem;
+    }
+    
+    .btn:hover::before, .btn:hover::after {
+        top: 0;
+        transform: skewx(0deg);
+    }
+    .btn:hover::after {
+        left: -1rem;
+    }
+    .btn:hover::before {
+        left: 10rem;
+    }    
+}
+
+
+@media(max-width: 1060px){
+    .product-part {
+        .productLeft {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+        }
+
+        .productRight {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .img__other, .img__otherBcs, .img__gel {
+            margin-top: 9rem;
+        }
+
+        .content__bcs {
+            width: 70rem;
+        }
+
+        .btn-control__Buynow {
+            left: 35%;
+        }
+    }
+}
+
+@media(max-width: 530px){
+    .product-part {
+        .btn-control__Buynow {
+            left: 30%;
+        }
+    
+        .img__bcs img{
+            width: 80%;
+            
+        }
+    
+        .img__bcs {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
