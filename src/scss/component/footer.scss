@@ -1,0 +1,123 @@
+.footer-part {
+    body {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+
+    .footer {
+        width: 100%;
+        padding: 15px;
+        background-color: black;
+        border: 2px solid white;
+        color: white;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .container__left {
+        width: 70%;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .container__left__title {
+        font-size: 30px;
+        padding: 10px;
+        margin: 0 20px
+    }
+
+    .container__left__body {
+        display: flex;
+        font-size: 20px;
+        font-weight: 300;
+        // justify-content: flex-start;
+    }
+    .container__left__body ul {
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+
+    .container__right {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 40%;
+    }
+
+    .container__right__title {
+        font-size: 20px;
+        width: 60%;
+        text-align: center;
+        font-weight: 550;
+    }
+
+    .container__right form {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+
+    .container__right form input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 50px;
+        font-weight: bold;
+        padding: 0 20px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .container__right form input:last-child {
+        margin-top: 20px;
+        width: 50%;
+        color: white;
+        background-color: red;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .container__right form input:hover{
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+}
+
+@media(max-width: 997px){
+    .footer-part{
+        .container__right form input:last-child{
+            display: flex;
+            justify-content: center;
+            width: 128px;
+            margin-bottom: 10px;
+        }
+    }
+}
+@media(max-width: 700px){
+    .footer-part{
+        .container{
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .container__left__title{
+            padding: 9px;
+            margin: 6px 13px;
+        }
+        .container__left__body ul{
+            margin: 10px;
+            justify-content: center;
+        }
+        .container__right{
+            margin: 20px;
+            width: 500px;
+            justify-content: center;
+        }
+    }
+}
