@@ -1,0 +1,290 @@
+.container-new {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-size: 1.6rem;
+    }
+
+    html {
+        font-size: 62.5%;
+        font-family: "Baloo Tammudu 2";
+    }
+
+    .container {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 0 0.5rem;
+        /* border: 3px solid aqua; */
+    }
+
+    .nav {
+        /* border: 3px solid red; */
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-topic {
+        /* border: 3px solid grey; */
+        height: 8rem;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        position: relative;
+        background-color: #c2c0c0;
+    }
+
+    .nav-topic h1 {
+        text-align: center;
+        justify-content: center;
+        color: rgb(72, 66, 67);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+
+    .nav-topic::after {
+        content: "----------------";
+        position: absolute;
+        /* padding: 0.5rem; */
+        top: 0;
+        left: 40%;
+        width: 60%;
+        color: #eeeeee;
+        transition: 0.5s;
+    }
+
+    .nav-topic::before {
+        position: absolute;
+        content: "----------------";
+        /* padding: 0.5rem; */
+        bottom: 0;
+        right: 40%;
+        width: -60%;
+        /* nhớ trừ */
+        color: #eeeeee;
+
+    }
+
+    .nav-total {
+        /* border: 3px solid purple; */
+        /* padding: 0.5rem; */
+        display: block;
+        align-items: center;
+
+    }
+
+    .demo-voucher {
+        border-top-color: rgb(196, 196, 196);
+        border-right-color: rgb(196, 196, 196);
+        border-bottom-color: rgb(196, 196, 196);
+        display: flex;
+        border-bottom: 10px solid white;
+    }
+
+    .demo-voucher:hover {
+        color: #000000;
+    }
+
+    .demo-voucher:hover {
+        transform: scale(1.1);
+        background-color: #eeeeee;
+    }
+
+    .demo-voucher {
+        padding: 10px;
+        transform: scale(1);
+        transition: all 0.5s;
+    }
+
+
+    .img-voucher {
+        /* border: 3px solid rgb(238, 192, 255); */
+        height: 205px;
+        width: 205px;
+        /* background-color: palevioletred; */
+        border-right: 2px dashed #dbdbdb;
+        /* align-items: center; */
+        /* justify-items: center; */
+    }
+
+    .img-voucher img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .content-voucher {
+        width: calc(100% - 205px);
+        padding: 0 0.5rem;
+        background-color: #eeeeee;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    .content-voucher p span {
+        font-size: 3.7rem;
+        font-weight: 700;
+    }
+
+    .content-voucher p {
+        font-weight: 400;
+        font-size: 3rem;
+    }
+
+    .emo-vnn {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        /* max-width: 100%; */
+        /* background-color: #fff; */
+        /* padding: 0 10px; */
+        /* border-radius: 40px; */
+        /* box-shadow: 0 5px 15pxrgba(150,174,178,.8); */
+        /* text-align: right; */
+        /* justify-content: center; */
+        /* left: 80%;
+        left: 80%;*/
+    }
+
+    .emo-vnn-dn {
+        color: #83818c;
+        /* padding: 20px; */
+        text-decoration: none;
+        transition: .3s;
+        /* margin: 0 7px; */
+        /* z-index: 1; */
+        display: block;
+        padding: 1rem 2rem;
+        background-color: #fff;
+        border-radius: 2rem;
+        margin: 1rem;
+        border: 1px solid #000;
+        box-shadow: 4px 0px 1px #2a2a2a;
+
+    }
+
+    .emo-vnn-dn:hover {
+        color: #c2c0c0;
+    }
+
+    .emo-vnn {
+
+        transform: scale(1);
+        transition: all 0.5s;
+    }
+
+    .emo-vnn:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media(max-width: 960px) {
+    .container-new {
+        .nav {
+
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start
+        }
+
+        .content-voucher p {
+            font-size: 3rem;
+
+        }
+
+        .content-voucher p span {
+            font-size: 3.4rem;
+        }
+    }
+}
+
+@media(max-width:720px) {
+    .container-new {
+        .content-voucher {
+            width: 700px;
+            height: 20rem;
+        }
+
+        .demo-voucher {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .content-voucher p {
+            font-size: 2rem;
+
+        }
+     .content-voucher p span {
+            font-size: 2.4rem;
+        }
+    }
+}
+
+@media(max-width: 720px) {
+    .container-new {
+        .nav {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .nav-topic {
+            height: 80px;
+            width: 495px;
+        }
+
+        .content-voucher {
+            width: 290px;
+        }
+        .img-voucher img{
+            height: 20rem;
+            width: 20rem;
+            display: block;
+        }
+    }
+}
+@media (max-width: 540px){
+    .container-new{
+        .content-voucher{
+            width: 18rem;
+            height: 17rem;
+        }
+        .img-voucher img{
+            width: 17rem;
+            height: 17rem;
+        }
+        .img-voucher{
+            width: 17rem;
+            height: 17rem;
+        }
+        .nav-topic{
+            width: 35rem;
+        }
+        .content-voucher p{
+            font-size: 1.4rem;
+        }
+        .content-voucher p span{
+            font-size: 1.8rem;
+        }
+        .emo-vnn{
+            display: flex;
+        }
+        .emo-vnn-dn{
+            width: 8rem;
+            height: 3rem;
+        }
+        .emo-vnn a{
+            font-size: 1rem;
+            padding: 8px;
+        }
+    }
+}
