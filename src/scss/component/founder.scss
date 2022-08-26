@@ -1,0 +1,262 @@
+.founder-part {
+    .container {
+        // max-width: 100%;
+        // height: 100%;
+        // width: 100%;
+        background-color: #2a2a2a;
+        background-position: center;
+        background-size: cover;
+        padding: 1rem;
+    }
+
+    .title {
+        // border: 2px solid blueviolet;
+        // max-width: 1320px;
+        background-color: #2a2a2a;
+        color: #fff;
+        text-shadow: -3px 1px 1px #eeeeee;
+        letter-spacing: 1.2rem;
+        text-align: center;
+        font-size: 5rem;
+        font-weight: 1000;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .founder {
+        // border: 2px solid orange;
+        background-color: #fff;
+        box-shadow: 7px -6px 1px #eeeeee;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // flex-wrap: wrap;
+        padding: 0;
+    }
+
+    // .founder-column-img{
+    //     border: 2px solid green;
+    //     width: 10%;
+    //     display: flex;
+    //     justify-content: center;
+    //     flex-wrap: wrap;
+    // }
+    .founder-row {
+        // border: 2px solid green;
+        display: flex;
+    }
+
+    // NÊN CHỈNH KHOẢNG CÁCH TỪ TH BLOCK VỚI NAME, CHO NÓ GỌN, CHỈNH NGAY IMG THÌ PHẢI CHỈNH TỚI 6 CÁI
+    .fd-block {
+        // border: 2px solid red;
+        display: flex;
+        align-items: center;
+        width: 50%;
+        padding: 1rem; // 
+    }
+
+    .fd-name {
+        // border: 2px solid brown;
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: 1000;
+        display: flex;
+        align-items: center;
+        border-collapse: collapse;
+        margin-left: 3rem; //
+    }
+
+    .founder-vi-img {
+        // border: 2px solid blue;
+        overflow: hidden;
+        border-radius: 75%;
+        height: 10rem;
+        width: 10rem;
+        display: flex;
+        // align-items: center;
+        // margin: 0 30px; BỎ
+    }
+
+    .founder-vi-img img {
+        display: block;
+        width: 120%;
+        height: 120%;
+    }
+
+    .founder-ngoc-img {
+        // border: 2px solid blue;
+        overflow: hidden;
+        border-radius: 75%;
+        height: 10rem;
+        width: 10rem;
+        display: flex;
+        align-items: center;
+        // margin: 0 30px; BỎ
+    }
+
+    .founder-ngoc-img img {
+        display: block;
+        width: 100%;
+        height: 150%;
+    }
+
+    .founder-duy-img {
+        // border: 2px solid blue;
+        overflow: hidden;
+        border-radius: 75%;
+        height: 10rem;
+        width: 10rem;
+        display: flex;
+        align-items: center;
+        // margin: 0 30px; BỎ
+    }
+
+    .founder-duy-img img {
+        display: block;
+        width: 100%;
+        height: 160%;
+    }
+
+    .founder-phap-img {
+        // border: 2px solid blue;
+        overflow: hidden;
+        border-radius: 75%;
+        width: 10rem;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        // margin: 0 30px; BỎ
+    }
+
+    .founder-phap-img img {
+        display: block;
+        width: 100%;
+        height: 150%;
+    }
+
+    .founder-huy-img {
+        // border: 2px solid blue;
+        overflow: hidden;
+        border-radius: 75%;
+        width: 10rem;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        // margin: 0 30px; BỎ
+    }
+
+    .founder-huy-img img {
+        display: block;
+        width: 140%;
+        height: 150%;
+    }
+
+    .founder-manh-img {
+        // border: 2px solid blue;
+        overflow: hidden;
+        border-radius: 75%;
+        width: 10rem;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        // margin: 0 30px; BỎ
+    }
+
+    .founder-manh-img img {
+        display: block;
+        width: 100%;
+        height: 150%;
+    }
+}
+
+
+
+// .founder-column-name{
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: center;
+//     flex-wrap: wrap;
+//     width: 40%;
+// }
+
+@media(max-width: 1044px) {
+    .founder-part {
+        .fd-name {
+            // border: 2px solid brown;
+            // text-align: center;
+            font-size: 3rem;
+            // font-weight: 1000;
+            // display: flex;
+            // align-items: center;
+            // border-collapse: collapse;
+        }
+    }
+}
+
+@media(max-width: 950px) {
+    .founder-part {
+        .fd.block{
+            padding: 1rem;
+        }
+        .fd-name {
+            // border: 2px solid brown;
+            // text-align: center;
+            font-size: 2.5rem;
+            // font-weight: 1000;
+            // display: flex;
+            // align-items: center;
+            // border-collapse: collapse;
+        }
+    }
+}
+
+@media(max-width: 855px) {
+    .founder-part {
+        .fd-name {
+            // border: 2px solid brown;
+            // text-align: center;
+            font-size: 2rem;
+            // font-weight: 1000;
+            // display: flex;
+            // align-items: center;
+            // border-collapse: collapse;
+        }
+    }
+}
+
+@media(max-width: 758px) {
+    .founder-part {
+        .fd-block {
+            // border: 2px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .fd-name {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 0; //lúc này chữ nằm dưới tên r nên ko cần margin-left nx;
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .founder-part {
+        .fd-block {
+            // border: 2px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 23rem; // phích cứng width để khi đúng width màn hình nhỏ nó sẽ tự xuống hàng
+            // chứ để 50% dù nhỏ nó vẫn căn 50% nên sẽ lệch hết
+        }
+
+        .founder-row {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}
