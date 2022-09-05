@@ -5,7 +5,7 @@
         max-width: 1320px;
         height: 100%;
         width: 100%;
-        background-color: #c5dbf2;
+        background-color: aliceblue;
     }
 
     .Box-Flex {
@@ -16,7 +16,7 @@
 
     .Box-Title {
         font-size: 3rem;
-        padding: 3rem 3rem 0 3rem;
+        padding: 10rem 3rem 0 3rem;
         text-transform: uppercase;
         font-weight: 700;
         text-align: center;
@@ -43,7 +43,8 @@
         border: none;
         box-shadow: 0 6px #999;
         display: inline-block;
-        margin: 3rem;
+        margin: 5rem;
+        margin-bottom: 10rem;
         padding: 1.3rem 2rem;
         border-radius: 15px;
         cursor: pointer;
@@ -107,7 +108,7 @@
 
             width: 460%;
             height: auto;
-            padding: 2rem 2rem 2rem 2rem;
+            padding: 1.5rem 2rem 1.9rem 2.8rem;
 
             background: #333;
             color: #E086D3;
@@ -115,7 +116,7 @@
 
             position: absolute;
             border-radius: 1.5rem;
-            font: 16px;
+            font-size: 16px;
 
             transform: translateY(9px);
             transition: all 0.3s ease-in-out;
@@ -164,9 +165,13 @@
         }
 
         .bottom .tooltip::after {
-            top: -17%;
+            top: -20%;
             left: 9.6%;
             transform: rotate(180deg);
+        }
+        .tooltip:hover{
+            transform: none;
+            display: none;
         }
     }
 
@@ -205,7 +210,7 @@
 
             width: 460%;
             height: auto;
-            padding: 2rem 2rem 2rem 2rem;
+            padding: 1.5rem 2rem 1.9rem 2.8rem;
 
             background: #333;
             color: #E086D3;
@@ -213,7 +218,7 @@
 
             position: absolute;
             border-radius: 1.5rem;
-            font: 16px;
+            font-size: 16px;
 
             transform: translateY(9px);
             transition: all 0.3s ease-in-out;
@@ -263,9 +268,13 @@
         }
 
         .bottom .tooltip::after {
-            top: -17%;
-            left: 330px;
+            top: -15%;
+            left: 321px;
             transform: rotate(180deg);
+        }
+        .tooltip:hover{
+            transform: none;
+            display: none;
         }
     }
 
@@ -304,7 +313,7 @@
 
             width: 460%;
             height: auto;
-            padding: 2rem 2rem 2rem 2rem;
+            padding: 1.5rem 2rem 1.9rem 2.8rem;
 
             background: #333;
             color: #E086D3;
@@ -312,7 +321,7 @@
 
             position: absolute;
             border-radius: 1.5rem;
-            font: 16px;
+            font-size: 16px;
 
             transform: translateY(9px);
             transition: all 0.3s ease-in-out;
@@ -362,9 +371,13 @@
         }
 
         .bottom .tooltip::after {
-            top: -17%;
-            left: 570px;
+            top: -19.5%;
+            left: 553px;
             transform: rotate(180deg);
+        }
+        .tooltip:hover{
+            transform: none;
+            display: none;
         }
     }
 
@@ -403,7 +416,7 @@
 
             width: 460%;
             height: auto;
-            padding: 2rem 2rem 2rem 2rem;
+            padding: 1.5rem 2rem 1.9rem 2.8rem;
 
             background: #333;
             color: #E086D3;
@@ -411,7 +424,7 @@
 
             position: absolute;
             border-radius: 1.5rem;
-            font: 16px;
+            font-size: 16px;
 
             transform: translateY(9px);
             transition: all 0.3s ease-in-out;
@@ -426,7 +439,7 @@
             width: 0px;
             height: 0px;
             border-style: solid;
-            border-width: 12px 12.5px 10px 12.5px;
+            border-width: 12px 12.5px 6px 12.5px;
             border-color: #333 transparent transparent transparent;
             position: absolute;
         }
@@ -461,14 +474,18 @@
         }
 
         .bottom .tooltip::after {
-            top: -17%;
-            left: 810px;
+            top: -16.5%;
+            left: 789px;
             transform: rotate(180deg);
+        }
+        .tooltip:hover{
+            transform: none;
+            display: none;
         }
     }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 980px) {
     .evaluation {
         //Box-Feature
         .Box-Feature {
@@ -477,16 +494,15 @@
             justify-content: space-between;
         }
         .TN .con-tooltip{
-            margin: 0 0 1rem 0;
-        }
-        .TN:hover{
-            height: 30rem;
+            margin: 3rem 0 3rem 0;
+            z-index: 4;
         }
         .TN .tooltip{
             width: 200%;
+            z-index: -4;
         }
         .TN .tooltip::after{
-            border-width: 12px 12.5px 18px 12.5px;
+            border-width: 12px 12.5px 10px 12.5px;
         }
         .TN .bottom .tooltip{
             top: 112%;
@@ -498,16 +514,15 @@
         }
 
         .BV .con-tooltip{
-            margin: 0 0 1rem 0;
-        }
-        .BV:hover {
-            height: 33rem;
+            margin: 0 0 3rem 0;
+            z-index: 3;
         }
         .BV .tooltip{
             width: 200%;
+            z-index: -3;
         }
         .BV .tooltip::after{
-            border-width: 12px 12.5px 22px 12.5px;
+            border-width: 12px 12.5px 15px 12.5px;
         }
         .BV .bottom .tooltip{
             top: 112%;
@@ -519,16 +534,15 @@
         }
 
         .QL .con-tooltip{
-            margin: 0 0 1rem 0;
-        }
-        .QL:hover {
-            height: 31rem;
+            margin: 0 0 3rem 0;
+            z-index: 2;
         }
         .QL .tooltip{
             width: 200%;
+            z-index: -2;
         }
         .QL .tooltip::after{
-            border-width: 12px 12.5px 19px 12.5px;
+            border-width: 12px 12.5px 14px 12.5px;
         }
         .QL .bottom .tooltip{
             top: 112%;
@@ -540,16 +554,15 @@
         }
 
         .CL .con-tooltip{
-            margin: 0 0 1rem 0;
-        }
-        .CL:hover {
-            height: 34rem;
+            margin: 0 0 2rem 0;
+            z-index: 1;
         }
         .CL .tooltip{
             width: 200%;
+            z-index: -1;
         }
         .CL .tooltip::after{
-            border-width: 12px 12.5px 30px 12.5px;
+            border-width: 12px 12.5px 23px 12.5px;
         }
         .CL .bottom .tooltip{
             top: 112%;

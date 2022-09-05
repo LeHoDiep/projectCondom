@@ -1,12 +1,17 @@
 .founder-part {
+    // .bg{
+    //     background-color: #f6f6f4;
+    // }
     .container {
         // max-width: 100%;
         // height: 100%;
         // width: 100%;
-        background-color: #2a2a2a;
-        background-position: center;
-        background-size: cover;
-        padding: 1rem;
+        // background-color: #2a2a2a;
+        // background-position: center;
+        // background-size: cover;
+        // padding: 1rem;
+        // border-radius: 20px;
+        padding: 5rem 0;
     }
 
     .title {
@@ -25,13 +30,15 @@
 
     .founder {
         // border: 2px solid orange;
-        background-color: #fff;
-        box-shadow: 7px -6px 1px #eeeeee;
+        background-color: #0087f640;
+        // box-shadow: 7px -6px 1px #eeeeee;
         // display: flex;
         // justify-content: center;
         // align-items: center;
         // flex-wrap: wrap;
-        padding: 0;
+        // padding: 0;
+        // border-radius: 20px;
+
     }
 
     // .founder-column-img{
@@ -44,6 +51,7 @@
     .founder-row {
         // border: 2px solid green;
         display: flex;
+        margin-left: 8rem;
     }
 
     // NÊN CHỈNH KHOẢNG CÁCH TỪ TH BLOCK VỚI NAME, CHO NÓ GỌN, CHỈNH NGAY IMG THÌ PHẢI CHỈNH TỚI 6 CÁI
@@ -179,8 +187,18 @@
 //     width: 40%;
 // }
 
-@media(max-width: 1044px) {
+@media(max-width: 1180px){
     .founder-part {
+        .founder-row{
+            margin-left: 5rem;
+        }
+    }
+}
+@media(max-width: 1084px) {
+    .founder-part {
+        .founder-row{
+            margin-left: 2rem;
+        }
         .fd-name {
             // border: 2px solid brown;
             // text-align: center;

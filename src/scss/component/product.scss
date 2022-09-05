@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
 .product-part {
+    // .bg{
+    //     background-color: #f6f6f4;
+    // }
     .container {
         max-width: 1320px;
         margin: 0 auto;
@@ -30,22 +33,15 @@
     
     .img__otherBcs {
         display: flex;
-        width: 70rem;
-    }
-    
-    .img__otherBcsLeft {
-        width: 70%;
-        height: 70%;
-    }
-    
-    .img__otherBcsRight {
-        width: 60%;
-        height: 75%;
+        width: 45rem;
+        justify-content: center;
+        height: 40rem;
     }
     
     .img__gel {
         display: flex;
         width: 60%;
+        align-items: center;
     }
     
     .img__gelLeft {

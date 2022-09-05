@@ -14,6 +14,7 @@ function signIn() {
 };
 document.getElementById("in").onclick = function(){signIn()};
 document.getElementById("up").onclick = function(){signUp()};
+
 let signIn1 = document.querySelector("#sign-in");
 signIn1.addEventListener("click", event =>{
     let lgBg = document.querySelector(".login-bg").classList.add("is-open");
@@ -28,3 +29,14 @@ signUp1.addEventListener("click", event =>{
     let lgBg = document.querySelector(".login-bg").classList.add("is-open");
     signUp();
 });
+
+function onProduct() {
+    const element = document.getElementById("toProduct");
+    element.scrollIntoView();
+}
+function onPricing() {
+    const element = document.getElementById("toPricing");
+    element.scrollIntoView();
+}
+document.getElementById("product").onclick = function(){onProduct()};
+document.getElementById("pricing").onclick = function(){onPricing()};
